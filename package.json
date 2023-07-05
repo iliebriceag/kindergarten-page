@@ -1,0 +1,22 @@
+{
+  "name": "kindergarten-page",
+  "version": "1.0.0",
+  "description": "Presentation page for kindergarten.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iliebriceag/kindergarten-page.git"
+  },
+  "keywords": [
+    "ERI"
+  ],
+  "author": "Ilie Briceag",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iliebriceag/kindergarten-page/issues"
+  },
+  "homepage": "https://github.com/iliebriceag/kindergarten-page#readme"
+}
