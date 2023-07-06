@@ -1,0 +1,357 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.container {
+    padding: 0;
+
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Custom Title */
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    padding: 60px 60px 5px 60px;
+}
+
+.title .line {
+    height: 3px;
+    width: 50px;
+    background-color: green;
+}
+
+.title h2 {
+    padding: 0 2rem;
+}
+
+/* navbar */
+.navbar {
+    font-family: 'Atma';
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0;
+    margin-left: 30px;
+    outline: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.colorNavbar::before,
+.colorNavbar::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 76px;
+    top: 66px;
+    background: url(img/navbar-bottom.png) center center repeat-x;
+}
+
+@media screen and (max-width: 767px) {
+
+    .colorNavbar::before,
+    .colorNavbar::after {
+        height: 28px;
+    }
+}
+
+/* rgb(83, 161, 209) */
+
+.btn-me {
+    color: rgb(73, 73, 73) !important;
+    font-weight: 700;
+    font-size: 19px;
+    border: 10px solid transparent;
+    border-top: none;
+}
+
+.btn-me:hover {
+    transition: all .5s;
+    color: green !important;
+    border: 10px solid transparent;
+    border-image: url(img/border-b.png) 15 stretch;
+    border-top: none;
+}
+
+/* active */
+ul>li a.active {
+    border: 10px solid transparent;
+    border-image: url(img/border-b.png) 15 stretch;
+    border-top: none;
+}
+
+/* end active */
+
+
+.top-bar {
+    font-family: 'Acme';
+    color: rgb(73, 73, 73);
+}
+
+.logo img {
+    height: 60px;
+    width: 200px;
+}
+
+.colorNavbar {
+    background-color: white;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.fixed {
+animation: all .2s ease-out;
+width: 100%;
+position: fixed;
+top: 0;
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* end navbar */
+
+/* Card */
+.card {
+    margin: 15px;
+    height: 250px;
+    border-radius: 80%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: transparent;
+}
+
+.card:hover {
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.greenCard {
+    background-color: rgba(0, 128, 0, 0.150);
+    color: green;
+}
+
+.greenCard:hover {
+    background-color: green;
+    color: aliceblue;
+
+}
+
+.orangeCard {
+    background-color: rgba(255, 166, 0, 0.150);
+    color: orange;
+}
+
+.orangeCard:hover {
+    background-color: orange;
+    color: aliceblue;
+
+}
+
+.redCard {
+    background-color: rgba(255, 0, 0, 0.150);
+    color: red;
+}
+
+.redCard:hover {
+    background-color: red;
+    color: aliceblue;
+
+}
+
+.cardText {
+    font-family: cursive;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    font-size: 25px;
+}
+
+.cardIcon {
+    font-size: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    font-family: 'Braah One';
+    padding: 100px;
+    height: 500px;
+    text-align: left;
+    color: white;
+    background-image: url(img/kids.jpg);
+}
+
+.header h1 {
+    font-size: 70px;
+    margin-left: 10px;
+
+}
+
+.header p {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 630px) {
+    .header {
+        padding: 60px;
+    }
+
+    .header h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .header {
+        padding: 20px;
+        height: 350px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+}
+
+.myBtn {
+    background-color: green;
+    border-color: transparent;
+    color: white;
+    margin-top: 20px;
+    margin: 15px;
+    padding: 5px 12px;
+}
+
+.myBtn:hover {
+    transition: all .2s;
+    background-color: rgba(0, 128, 0, 0.842);
+}
+
+/* gelerie */
+* {
+    box-sizing: border-box;
+    transition: all 0.125s ease 0s;
+}
+
+
+img {
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 15%;
+    padding: 5px;
+
+}
+
+.column img {
+    margin-top: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.column img:active {
+    height: auto;
+    width: auto;
+    max-width: 80%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border: 10px solid #fff;
+    margin: 0px;
+    box-shadow: 0 0 1000px 1000px #fff8;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+@media (max-width: 768px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+/* contact */
+.col {
+    font-weight: bold;
+    font-size: 20px;
+    flex: 15%;
+}
+
+@media (max-width: 800px) {
+    .col {
+        font-size: 15px;
+        flex: 100%;
+    }
+}
+
+.col img {
+    width: 70%;
+}
+
+.textProgram {
+    font-family: 'Atma';
+    margin: auto;
+    height: 50%;
+}
+
+.dataContact {
+    font-family: cursive;
+    padding: 5px;
+}
+
+.dataContact:hover {
+    cursor: pointer;
+    color: green;
+}
+.textProgram {
+    margin-top: 200px;
+}
+/* footer */
+footer {
+    font-family: 'Braah One';
+    background-color: rgba(43, 42, 42, 0.267);
+    font-weight: bold;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+}
+
+footer p {
+    color: rgb(53, 52, 52);
+}
+
+footer a {
+    color: rgb(53, 52, 52);
+    margin: 10px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+footer a:hover {
+    color: green;
+    transition: all .3s;
+}
