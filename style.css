@@ -112,7 +112,9 @@ ul>li a.active {
     text-align: center;
 }
 .fixed {
+background-color: white;
 animation: all .2s ease-out;
+z-index: 10;
 width: 100%;
 position: fixed;
 top: 0;
