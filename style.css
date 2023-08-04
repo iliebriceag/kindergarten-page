@@ -203,6 +203,7 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     margin-left: 15px;
 }
 
+
 @media screen and (max-width: 630px) {
     .header {
         padding: 60px;
@@ -295,25 +296,32 @@ img {
 
 /* contact */
 .col {
-    font-weight: bold;
-    font-size: 20px;
+    font-family: 'Atma';
+    font-size: 25px;
     flex: 15%;
 }
 
 @media (max-width: 800px) {
     .col {
-        font-size: 15px;
+        font-size: 20px;
         flex: 100%;
     }
 }
 
 .col img {
     width: 70%;
+    display: block;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 .textProgram {
     font-family: 'Atma';
     margin: auto;
+    text-align: center;
+    margin-top: 20%;
     height: 50%;
 }
 
@@ -325,25 +333,22 @@ img {
     cursor: pointer;
     color: green;
 }
-.textProgram {
-    margin-top: 200px;
-}
+
 /* footer */
 footer {
     font-family: 'Braah One';
-    background-color: rgba(43, 42, 42, 0.267);
-    font-weight: bold;
+    background-color: black;
     text-align: center;
     height: auto;
     padding: 10px;
 }
 
 footer p {
-    color: rgb(53, 52, 52);
+    color: rgb(200, 200, 200)
 }
 
 footer a {
-    color: rgb(53, 52, 52);
+    color: rgb(200, 200, 200);
     margin: 10px;
     font-size: 30px;
     padding: 10px;
